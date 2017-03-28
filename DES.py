@@ -167,6 +167,17 @@ class des():
             self.subkey.append(self.generateSubkey(''.join(c), ''.join(d)))
         return ''.join(c), ''.join(d)
 
+    def rightShifts(self, c, d):
+        c = list(c)
+        d = list(d)
+        self.subkey.append(self.generateSubkey(''.join(c), ''.join(d)))
+        for move in self.left_shift:
+            for i in range(move):
+                c.insert(0, c.pop(len(c)-1))
+                d.insert(0, d.pop(len(d)-1))
+            self.subkey.append(self.generateSubkey(''.join(c), ''.join(d)))
+        return ''.join(c), ''.join(d)
+
     def generateSubkey(self, c, d):
         result = []
         cd = c+d
@@ -190,6 +201,12 @@ class des():
         result = []
         for i in range(48):
             result.append(str(int(subkey[i]) ^ int(ER[i])))
+        return ''.join(result)
+
+    def xorLF(self, left, f):
+        result = []
+        for i in range(32):
+            result.append(str(int(left[i]) ^ int(f[i])))
         return ''.join(result)
 
     def sboxCalculation(self, data):
