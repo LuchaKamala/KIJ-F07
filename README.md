@@ -1,5 +1,5 @@
 # KIJ-F07
-Tugas 1 - Penerapan algoritma Data Encryption Standard (DES) dengan menggunakan mode operasi Counter (CTR)
+Tugas 1 - Implementasi algoritma Data Encryption Standard (DES) dengan menggunakan mode operasi Counter (CTR)
 
 Kelompok F07 :
 - Lucha Kamala P. (5114100062)
@@ -9,7 +9,7 @@ Kelompok F07 :
 
 # Dasar Teori
 
-# Langkah Pengerjaan
+# Langkah Implementasi
 
 # Kesimpulan
 
