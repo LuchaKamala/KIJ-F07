@@ -15,10 +15,10 @@ Salah satu cara yang dapat dilakukan untuk menjaga kerahasiaan data dan keamanan
 Terdapat banyak algoritma yang digunakan sebagai metode enkripsi dan dekripsi, salah satunya adalah algoritma Data Encryption Standard (DES) dengan menggunakan mode operasi Counter (CTR).
 
 ## Dasar Teori
-### Data Encryption Standard
+#### Data Encryption Standard
 Pada bidang kriptografi, Data Encryption Standard (DES) adalah algoritma enkripsi kunci simetrik dan tergolong dalam jenis block cipher. Algoritma ini digunakan untuk mengenkripsi suatu blok plaintext berukuran 64-bit menjadi ciphertext berukuran 64-bit dengan menggunakan kunci berukuran 56-bit.
 
-### Counter
+#### Counter
 Counter (CTR) merupakan salah satu mode operasi yang digunakan untuk mengubah block cipher menjadi stream chipher. Mode operasi ini menghasilkan blok keystream selanjutnya dengan mengenkripsi nilai berkelanjutan dari suatu “counter”. Counter tersebut dapat berupa fungsi apapun yang mengeluarkan suatu sekuens yang menjamin tidak akan berulang dalam jangka waktu panjang. Meskipun demikian, jenis counter biasa (1, 2, 3, … dan seterusnya) lebih mudah dan sering digunakan. Mode Counter (CTR) sangat cocok untuk dioperasikan pada komputer multi-processor, dimana blok dapat diekripsikan secara pararel. Selain itu, mode ini juga tidak mengalami permasalahan short-cycle.
 
 ## Langkah Implementasi
