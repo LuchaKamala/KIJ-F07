@@ -23,7 +23,8 @@ Counter (CTR) merupakan salah satu mode operasi yang digunakan untuk mengubah bl
 
 # Langkah Implementasi
 Berikut ini merupakan langkah implementasi algoritma Data Encryption Standard (DES) dengan menggunakan mode operasi Counter (CTR):
-1. 
+1. Langkah pertama adalah
+2. Langkah kedua adalah
 
 # Kesimpulan
 
