@@ -2,15 +2,15 @@
 Tugas 1 - Penerapan algoritma Data Encryption Standard (DES) dengan menggunakan mode operasi Counter (CTR)
 
 Kelompok F07 :
-- Lucha Kamala Putri	(5114100062)
-- Irfan Hanif 		    (5114100177)
+- Lucha Kamala Putri (5114100062)
+- Irfan Hanif        (5114100177)
 
-# PENDAHULUAN
+# Pendahuluan
 
-# DASAR TEORI
+# Dasar Teori
 
-# LANGKAH PENGERJAAN
+# Langkah Pengerjaan
 
-# KESIMPULAN
+# Kesimpulan
 
-# SARAN
+# Saran
