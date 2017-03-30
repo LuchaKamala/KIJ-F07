@@ -167,17 +167,6 @@ class des():
             self.subkey.append(self.generateSubkey(''.join(c), ''.join(d)))
         return ''.join(c), ''.join(d)
 
-    def rightShifts(self, c, d):
-        c = list(c)
-        d = list(d)
-        self.subkey.append(self.generateSubkey(''.join(c), ''.join(d)))
-        for move in self.left_shift:
-            for i in range(move):
-                c.insert(0, c.pop(len(c)-1))
-                d.insert(0, d.pop(len(d)-1))
-            self.subkey.append(self.generateSubkey(''.join(c), ''.join(d)))
-        return ''.join(c), ''.join(d)
-
     def generateSubkey(self, c, d):
         result = []
         cd = c+d
@@ -263,3 +252,57 @@ class des():
         for x in self.iip:
             result.append(data[x-1])
         return ''.join(result)
+
+    def encryptDES(self, message, key):
+        binary_key = self.stringToBinary(key)
+        binary_key = self.padding(binary_key)
+        permuted_key = self.convertToPermutedKey(binary_key)
+
+        # c = list(permuted_key[:28])
+        # d = list(permuted_key[28:])
+
+        c = '1111000011001100101010101111'
+        d = '0101010101100110011110001111'
+
+        c, d = self.shifts(c, d)
+
+        # message = self.stringToBinary(message)
+        ip_message = self.initiatePermutation(message)
+        self.left.append(ip_message[:32])
+        self.right.append(ip_message[32:])
+
+        for i in range(16):
+            self.left.append(self.right[i])
+            self.right.append(self.xorLF(self.left[i], self.calculateF(self.right[i], self.subkey[i+1])))
+
+        l16r16 = ''.join(self.right[16]) + ''.join(self.left[16])
+        output = self.inverseIP(l16r16)
+
+        return output
+
+    def descryptDES(self, message, key):
+        binary_key = self.stringToBinary(key)
+        binary_key = self.padding(binary_key)
+        permuted_key = self.convertToPermutedKey(binary_key)
+
+        # c = list(permuted_key[:28])
+        # d = list(permuted_key[28:])
+
+        c = '1111000011001100101010101111'
+        d = '0101010101100110011110001111'
+
+        c, d = self.shifts(c, d)
+
+        # message = self.stringToBinary(message)
+        ip_message = self.initiatePermutation(message)
+        self.left.append(ip_message[:32])
+        self.right.append(ip_message[32:])
+
+        for i in range(16):
+            self.left.append(self.right[i])
+            self.right.append(self.xorLF(self.left[i], self.calculateF(self.right[i], self.subkey[16-i])))
+
+        l16r16 = ''.join(self.right[16]) + ''.join(self.left[16])
+        output = self.inverseIP(l16r16)
+
+        return output
