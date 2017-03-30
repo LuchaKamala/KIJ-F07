@@ -135,7 +135,6 @@ class des():
         self.right = []
 
     def stringToBinary(self, data):
-        data_lenght = len(data)
         result = []
         for char in data:
             decimal = ord(char)
@@ -255,14 +254,10 @@ class des():
 
     def encryptDES(self, message, key):
         binary_key = self.stringToBinary(key)
-        binary_key = self.padding(binary_key)
         permuted_key = self.convertToPermutedKey(binary_key)
 
-        # c = list(permuted_key[:28])
-        # d = list(permuted_key[28:])
-
-        c = '1111000011001100101010101111'
-        d = '0101010101100110011110001111'
+        c = list(permuted_key[:28])
+        d = list(permuted_key[28:])
 
         c, d = self.shifts(c, d)
 
@@ -280,16 +275,12 @@ class des():
 
         return output
 
-    def descryptDES(self, message, key):
+    def decryptDES(self, message, key):
         binary_key = self.stringToBinary(key)
-        binary_key = self.padding(binary_key)
         permuted_key = self.convertToPermutedKey(binary_key)
 
-        # c = list(permuted_key[:28])
-        # d = list(permuted_key[28:])
-
-        c = '1111000011001100101010101111'
-        d = '0101010101100110011110001111'
+        c = list(permuted_key[:28])
+        d = list(permuted_key[28:])
 
         c, d = self.shifts(c, d)
 
@@ -300,7 +291,7 @@ class des():
 
         for i in range(16):
             self.left.append(self.right[i])
-            self.right.append(self.xorLF(self.left[i], self.calculateF(self.right[i], self.subkey[16-i])))
+            self.right.append(self.xorLF(self.left[i], self.calculateF(self.right[i], self.subkey[i+1])))
 
         l16r16 = ''.join(self.right[16]) + ''.join(self.left[16])
         output = self.inverseIP(l16r16)
