@@ -48,16 +48,16 @@ dilampirkan kemudian)
 ### Langkah implementasi pada DES dengan algoritma Counter
 Berikut ini merupakan langkah implementasi algoritma Data Encryption Standard (DES) dengan menggunakan mode operasi Counter (CTR):
 1. Enkripsi
-1.1 CTR menggunakan counter dan key sebagai input pada algoritma DES
-1.2 Counter adalah bilangan binary 64bit terurut yang terus di-increment per 64bit message yang dienkripsi
+1.1. CTR menggunakan counter dan key sebagai input pada algoritma DES
+1.2. Counter adalah bilangan binary 64bit terurut yang terus di-increment per 64bit message yang dienkripsi
 (Perhatikan diagram CTR di atas)
-1.3 Ouput dari DES akan di XOR dengan message yang ingin dienkripsi
-1.4 hasil dari XOR akan menghasilkan chiper text
+1.3. Ouput dari DES akan di XOR dengan message yang ingin dienkripsi
+1.4. hasil dari XOR akan menghasilkan chiper text
 
 2. Dekripsi
-1.1 Lakukan langkah 1.1 dan 1.2
-1.2 Output dari DES akan di XOR dengan chiper text yang ingin didekripsi
-1.3 Hasil dari XOR akan menghasilkan plain text
+1.1. Lakukan langkah 1.1 dan 1.2
+1.2. Output dari DES akan di XOR dengan chiper text yang ingin didekripsi
+1.3. Hasil dari XOR akan menghasilkan plain text
 
 ## Kesimpulan
 
