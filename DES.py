@@ -142,6 +142,17 @@ class des():
             result.append(binary)
         return ''.join(result)
 
+    def binaryToString(self, data):
+        r = []
+        result = []
+        for i in range(0, len(data), 8):
+            num = data[i:i + 8]
+            r.append(num)
+        for num in r:
+            text = chr(int(num, 2))
+            result.append(text)
+        return ''.join(result)
+
     def convertToPermutedKey(self, key):
         permuted_key = []
         for bit_index in self.pc1:
@@ -273,27 +284,6 @@ class des():
         l16r16 = ''.join(self.right[16]) + ''.join(self.left[16])
         output = self.inverseIP(l16r16)
 
-        return output
-
-    def decryptDES(self, message, key):
-        binary_key = self.stringToBinary(key)
-        permuted_key = self.convertToPermutedKey(binary_key)
-
-        c = list(permuted_key[:28])
-        d = list(permuted_key[28:])
-
-        c, d = self.shifts(c, d)
-
-        # message = self.stringToBinary(message)
-        ip_message = self.initiatePermutation(message)
-        self.left.append(ip_message[:32])
-        self.right.append(ip_message[32:])
-
-        for i in range(16):
-            self.left.append(self.right[i])
-            self.right.append(self.xorLF(self.left[i], self.calculateF(self.right[i], self.subkey[i+1])))
-
-        l16r16 = ''.join(self.right[16]) + ''.join(self.left[16])
-        output = self.inverseIP(l16r16)
+        output = self.binaryToString(output)
 
         return output
