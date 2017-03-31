@@ -41,8 +41,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="56" column="17" lean-forward="false" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+            <state relative-caret-position="510">
+              <caret line="74" column="71" lean-forward="false" selection-start-line="74" selection-start-column="71" selection-end-line="74" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -404,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490933029364</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Melakukan penambahan pada README.md (5)">
+      <created>1490933076824</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1490933076824</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -442,7 +449,8 @@
     <MESSAGE value="Melakukan penambahan pada README.md (2)" />
     <MESSAGE value="Melakukan penambahan pada README.md (3)" />
     <MESSAGE value="Melakukan penambahan pada README.md (4)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Melakukan penambahan pada README.md (4)" />
+    <MESSAGE value="Melakukan penambahan pada README.md (5)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Melakukan penambahan pada README.md (5)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -609,8 +617,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="56" column="17" lean-forward="false" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+        <state relative-caret-position="510">
+          <caret line="74" column="71" lean-forward="false" selection-start-line="74" selection-start-column="71" selection-end-line="74" selection-end-column="71" />
           <folding />
         </state>
       </provider>

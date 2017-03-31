@@ -70,3 +70,6 @@ adalah binary atau string. Cara ini jauh lebih cepat dibandingkan diimplementasi
 5. Output berupa HEX lebih manusiawi dibandingkan STRING.
 
 ## Terima Kasih
+
+## Referensi
+http://page.math.tu-berlin.de/~kant/teaching/hess/krypto-ws2006/des.htm
