@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="100dd10b-6ecb-4b65-a68c-e45a29b14765" name="Default" comment="">
+    <list default="true" id="100dd10b-6ecb-4b65-a68c-e45a29b14765" name="Default" comment="Melakukan penambahan pada README.md (3)">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -41,8 +41,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="64" column="1" lean-forward="false" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
+            <state relative-caret-position="334">
+              <caret line="59" column="3" lean-forward="false" selection-start-line="59" selection-start-column="3" selection-end-line="59" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -390,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490932741900</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Melakukan penambahan pada README.md (3)">
+      <created>1490932800296</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1490932800296</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -426,7 +433,8 @@
     <MESSAGE value="Menyempurnakan algoritma counter dan menggabungkannya dengan DES" />
     <MESSAGE value="Melakukan penambahan pada README.md" />
     <MESSAGE value="Melakukan penambahan pada README.md (2)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Melakukan penambahan pada README.md (2)" />
+    <MESSAGE value="Melakukan penambahan pada README.md (3)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Melakukan penambahan pada README.md (3)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -593,8 +601,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="64" column="1" lean-forward="false" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
+        <state relative-caret-position="334">
+          <caret line="59" column="3" lean-forward="false" selection-start-line="59" selection-start-column="3" selection-end-line="59" selection-end-column="3" />
           <folding />
         </state>
       </provider>
