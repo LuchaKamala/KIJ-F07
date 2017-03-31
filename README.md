@@ -29,7 +29,7 @@ Counter (CTR) merupakan salah satu mode operasi yang digunakan untuk mengubah bl
 
 ## Langkah Implementasi
 ### Langkah Pada Data Encryption Standard (DES)
-1. Generate Subkeys
+1. Generate Subkeys <br/>
 1.1 Memasukkan key yang ingin digunakan. Key ini akan sama dengan key yang akan digunakan untuk proses decryption.
 Key juga jumlahnya harus tepat 64 bit <br/>
 1.2 Key akan dipermutasi dengan menjadi 56 bit <br/>
@@ -37,7 +37,7 @@ Key juga jumlahnya harus tepat 64 bit <br/>
 1.4 Setiap C0 dan Do di shift ke kiri menjadi C1 dan D1. C1D1 akan menjadi subkey ke-1 atau K1 <br/>
 1.5 Lakukan langkah 1.4 hingga didapatkan K16 <br/>
 
-2. Generate Chiper Text
+2. Generate Chiper Text <br/>
 2.1 Message yang ingin dienkripsi kan dilakukan permutasi awal (Initiate Permutation)
 2.2 Setalah itu, binary yang didapatkan akan dibagi dua menjadi L0 (32 bit pertama) dan R0 (32 bit terakhir) <br/>
 2.3 Lalu dilakukan iterasi 16 kali dengan ketentuan L1 = R0 dan R1 = L0 = f(Ro, K1) (Rincian rumus ini akan <br/>
@@ -47,14 +47,14 @@ dilampirkan kemudian) <br/>
 
 ### Langkah implementasi pada DES dengan algoritma Counter
 Berikut ini merupakan langkah implementasi algoritma Data Encryption Standard (DES) dengan menggunakan mode operasi Counter (CTR):
-1. Enkripsi
+1. Enkripsi <br/>
 1.1 CTR menggunakan counter dan key sebagai input pada algoritma DES <br/>
 1.2 Counter adalah bilangan binary 64bit terurut yang terus di-increment per 64bit message yang dienkripsi
 (Perhatikan diagram CTR di atas) <br/>
 1.3 Ouput dari DES akan di XOR dengan message yang ingin dienkripsi <br/>
 1.4 hasil dari XOR akan menghasilkan chiper text <br/>
 
-2. Dekripsi
+2. Dekripsi <br/>
 2.1. Lakukan langkah 1.1 dan 1.2 <br/>
 2.2 Output dari DES akan di XOR dengan chiper text yang ingin didekripsi <br/>
 2.3. Hasil dari XOR akan menghasilkan plain text <br/>
