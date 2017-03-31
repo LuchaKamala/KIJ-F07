@@ -60,6 +60,7 @@ Berikut ini merupakan langkah implementasi algoritma Data Encryption Standard (D
 2.3. Hasil dari XOR akan menghasilkan plain text <br/>
 
 ## Kesimpulan
+Algoritma counter sangat well-designed karena bisa bolak-balik enkripsi-deskripsi hanya dengan algoritma enkripsi DES. Dengan distribusi key yang baik, maka ini menjadi salah satu algoritma yang sangat kuat dan mudah dimplementasikan.
 
 ## Saran
 1. Semua implementasi algoritma yang kami buat menggunakan format string sekalipun format yang sedang dikerjakan

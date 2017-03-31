@@ -1,7 +1,10 @@
 import Counter
 
-key = '87654321'
+key = '132465768'
 message = "Im Buzz Lightyear, Im coming in peace"
+
+key = str(input())
+message = str(input())
 
 counter = Counter.counter()
 encrypt = counter.encrypt(key, message)

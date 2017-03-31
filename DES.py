@@ -160,9 +160,9 @@ class des():
         return ''.join(permuted_key)
 
     def padding(self, data):
-        diff = 64-len(data)
+        diff = 8-len(data)
         while diff:
-            data += '0'
+            data += '\0'
             diff -= 1
         return data
 
@@ -264,6 +264,7 @@ class des():
         return ''.join(result)
 
     def encryptDES(self, message, key):
+        key = self.padding(key)
         binary_key = self.stringToBinary(key)
         permuted_key = self.convertToPermutedKey(binary_key)
 
