@@ -73,3 +73,4 @@ adalah binary atau string. Cara ini jauh lebih cepat dibandingkan diimplementasi
 
 ## Referensi
 http://page.math.tu-berlin.de/~kant/teaching/hess/krypto-ws2006/des.htm
+https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation
