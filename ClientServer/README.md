@@ -70,19 +70,17 @@ Berikut ini merupakan langkah implementasi algoritma Data Encryption Standard (D
 ### Langkah Implementasi Client-Server
 Berikut ini merupakan langkah implementasi client-server dengan menggunakan algoritma Data Encryption Standard (DES) dan mode operasi Counter (CTR):
 1. Server membuat socket yang isinya adalah host dimana host merupakan alamat ip dan port yang telah didefinisikan pada program. <br/>
-<p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24894652/03327eca-1eb6-11e7-839b-6395ed419e6e.png" /></p>
+<p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24912869/9d05ef1c-1ef9-11e7-97f8-d54309d8dfa5.png" /></p>
 2. Server membuka koneksi socket. <br/>
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24894662/19c4c346-1eb6-11e7-8458-f3436e2dbd16.png" /></p>
 3. Client mengkoneksikan dirinya untuk terhubung dengan socket yang telah dibuka oleh server. Dalam tahap ini, client dianggap telah mengetahui host dan port milik server sebagai syarat agar dapat diterima.
-<p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24894681/2faf15da-1eb6-11e7-99b8-08916d9f7dde.png" /></p>
+<p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24912901/bc54c42e-1ef9-11e7-995b-4a9c7e67d9f7.png" /></p>
 4. Setelah terkoneksi, client mengirimkan informasi berupa pesan teks yang selanjutnya dieksekusi oleh mode operasi Counter untuk di enkripsi dengan menggunakan key yang telah ditetapkan.
-<p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24894692/451afcfe-1eb6-11e7-9aed-8485e03285c6.png" /></p>
+<p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24913009/05c9fd18-1efa-11e7-9e87-fc24943d0332.png" /></p>
 5. Pada kesempatan kali ini, server dirancang untuk menerima informasi yang dikirimkan client berupa informasi yang telah di enkripsi dan yang telah di dekripsi oleh mode operasi yang sama yaitu Counter. Akan tetapi, informasi dienkripsi sebelum melewati perantara jaringan sedangkan informasi akan di dekripsi ketika informasi tersebut telah melewati perantara jaringan.
-<p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24894705/58e1715a-1eb6-11e7-9fc7-fab20ddd9d67.png" /></p>
-<p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24894719/69c79ed6-1eb6-11e7-9568-e836b8218816.png" /></p>
+<p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24913097/429583ca-1efa-11e7-8df6-8fd3f9e1ea6b.png" /></p>
 6. Selanjutnya dengan menggunakan metode threading maka server bertugas untuk mengirimkan informasi yang didapat ke client lain yang terhubung.
-<p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24894705/58e1715a-1eb6-11e7-9fc7-fab20ddd9d67.png" /></p>
-<p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24894719/69c79ed6-1eb6-11e7-9568-e836b8218816.png" /></p>
+<p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24913097/429583ca-1efa-11e7-8df6-8fd3f9e1ea6b.png" /></p>
 
 ## Teknik Operasi
 Berikut ini merupakan beberapa teknik operasi yang digunakan dalam implementasi algoritma Data Encryption Standard (DES) dengan menggunakan mode operasi Counter (CTR):
@@ -125,11 +123,15 @@ Masukkan key yang ingin digunakan dan message yang ingin dikirimkan pada side cl
 Key : irfan <br/>
 Message : Halo Lucha <br/>
 
-<p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24895296/d20e0aae-1eb9-11e7-90c7-62346f1fb307.png" /></p>
+<p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24913777/65893334-1efc-11e7-8a64-b93b39236ad2.png" /></p>
 
-Output program berupa hasil enkripsi yaitu message yang telah diekripsikan (ciphertext) dan hasil dekripsi yaitu message asli (plaintext) pada side server. Berikut ini merupakan output program:
+Output program berupa hasil enkripsi yaitu message yang telah diekripsikan (ciphertext) dan hasil dekripsi yaitu message asli (plaintext) pada side server. Berikut ini merupakan output program pada side server:
 
-<p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24895304/e4d13d82-1eb9-11e7-9de8-574a9d804256.png" /></p>
+<p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24913789/7412a4bc-1efc-11e7-8bb1-abe882ef5015.png" /></p>
+
+Message yang telah diterima server, kemudian akan dikirimkan ulang oleh server kepada client. Berikut ini merupakan output program pada side client:
+
+<p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24913807/8610e868-1efc-11e7-9c3d-d9f85ac73ef0.png" /></p>
 
 ## Kesimpulan
 Algoritma enkripsi Data Encryption Standard (DES) dengan menggunakan mode operasi Counter (CTR) dapat mengamankan pesan atau data informasi yang dikirimkan antar komputer dalam lalu lintas jaringan. Algoritma ini mampu untuk mengurangi resiko penyadapan, yaitu sniffer, serta tindak kejahatan teknologi informasi lainnya.
