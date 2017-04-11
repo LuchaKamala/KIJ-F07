@@ -132,7 +132,7 @@ Output program berupa hasil enkripsi yaitu message yang telah diekripsikan (ciph
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24895304/e4d13d82-1eb9-11e7-9de8-574a9d804256.png" /></p>
 
 ## Kesimpulan
-Algoritma enkripsi Data Encryption Standard (DES) dengan menggunakan mode operasi Counter (CTR) dapat mengamankan pesan atau data informasi yang dikirimkan antar komputer dalam lalu lintas jaringan. Algoritma ini mampu untuk mengurangi resiko penyadapan, yaitu sniffer, serta tindak kejahatan teknologi informasi.
+Algoritma enkripsi Data Encryption Standard (DES) dengan menggunakan mode operasi Counter (CTR) dapat mengamankan pesan atau data informasi yang dikirimkan antar komputer dalam lalu lintas jaringan. Algoritma ini mampu untuk mengurangi resiko penyadapan, yaitu sniffer, serta tindak kejahatan teknologi informasi lainnya.
 
 ## Saran
 1. Semua implementasi algoritma yang kami buat menggunakan format string meskipun format yang sedang dikerjakan adalah binary atau string. Cara ini jauh lebih cepat dibandingkan bila diimplementasikan dalam bentuk List. <br/>
