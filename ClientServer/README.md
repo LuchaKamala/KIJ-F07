@@ -119,12 +119,14 @@ menunjuk pada kolom ke- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;1&nbsp;1&nbsp;0&nbs
 Berdasarkan baris ke-3 kolom ke-6 yang ditunjuk pada tabel mutlak atau statis didapatkan nilai biner yaitu 1 atau 0001.
 
 ## Input dan Output Program
+### Input Program
 Masukkan key yang ingin digunakan dan message yang ingin dikirimkan pada side client. Berikut ini merupakan input program: <br/>
 Key : irfan <br/>
 Message : Halo Lucha <br/>
 
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24913777/65893334-1efc-11e7-8a64-b93b39236ad2.png" /></p>
 
+### Output Program
 Output program berupa hasil enkripsi yaitu message yang telah diekripsikan (ciphertext) dan hasil dekripsi yaitu message asli (plaintext) pada side server. Berikut ini merupakan output program pada side server:
 
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24914133/87631fb4-1efd-11e7-8f4c-53cfc15bd1f1.png" /></p>
