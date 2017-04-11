@@ -127,7 +127,7 @@ Message : Halo Lucha <br/>
 
 Output program berupa hasil enkripsi yaitu message yang telah diekripsikan (ciphertext) dan hasil dekripsi yaitu message asli (plaintext) pada side server. Berikut ini merupakan output program pada side server:
 
-<p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24913789/7412a4bc-1efc-11e7-8bb1-abe882ef5015.png" /></p>
+<p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24914133/87631fb4-1efd-11e7-8f4c-53cfc15bd1f1.png" /></p>
 
 Message yang telah diterima server, kemudian akan dikirimkan ulang oleh server kepada client. Berikut ini merupakan output program pada side client:
 
