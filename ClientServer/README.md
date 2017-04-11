@@ -121,6 +121,15 @@ menunjuk pada kolom ke- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;1&nbsp;1&nbsp;0&nbs
 Berdasarkan baris ke-3 kolom ke-6 yang ditunjuk pada tabel mutlak atau statis didapatkan nilai biner yaitu 1 atau 0001.
 
 ## Input dan Output Program
+Masukkan key yang ingin digunakan dan message yang ingin dikirimkan pada side client. Berikut ini merupakan input program: <br/>
+Key : irfan <br/>
+Message : Halo Lucha <br/>
+
+<p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24895296/d20e0aae-1eb9-11e7-90c7-62346f1fb307.png" /></p>
+
+Output program berupa hasil enkripsi yaitu message yang telah diekripsikan (ciphertext) dan hasil dekripsi yaitu message asli (plaintext) pada side server. Berikut ini merupakan output program:
+
+<p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24895304/e4d13d82-1eb9-11e7-9de8-574a9d804256.png" /></p>
 
 ## Kesimpulan
 Algoritma enkripsi Data Encryption Standard (DES) dengan menggunakan mode operasi Counter (CTR) dapat mengamankan pesan atau data informasi yang dikirimkan antar komputer dalam lalu lintas jaringan. Algoritma ini mampu untuk mengurangi resiko penyadapan, yaitu sniffer, serta tindak kejahatan teknologi informasi.
