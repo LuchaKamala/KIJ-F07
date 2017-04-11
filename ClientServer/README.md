@@ -144,3 +144,4 @@ Algoritma enkripsi Data Encryption Standard (DES) dengan menggunakan mode operas
 ## Referensi
 1. http://page.math.tu-berlin.de/~kant/teaching/hess/krypto-ws2006/des.htm <br/>
 2. https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation <br/>
+3. Final Project Pemrograman Jaringan milik Irfan pada semester 5 <br/>
