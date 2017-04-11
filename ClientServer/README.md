@@ -30,7 +30,7 @@ Counter (CTR) merupakan salah satu mode operasi yang digunakan untuk mengubah bl
 ### Client dan Server
 Dalam komunikasi antar komputer pada lalu lintas jaringan, client adalah pihak yang menerima dan menampilkan serta menjalankan aplikasi (software komputer). Server adalah pihak yang menyediakan dan bertindak sebagai pengelola aplikasi, data, dan keamanannya. Sedangkan pesan merupakan data informasi text yang dikirim atau disampaikan antara pihak client dan pihak server.
 
-<p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24907159/335beac6-1ee5-11e7-92f9-d2ea33f977ec.png" /></p>
+<p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/24907211/773fe0e4-1ee5-11e7-91b6-3627b749f076.png" /></p>
 
 ### Sniffer
 Sniffer adalah teknik pencurian dan penyadapan data informasi yang dilakukan dengan cara memonitoring atau melakukan analisis terhadap paket data yang dikirimkan antar komputer, yaitu dari komputer client ke komputer server. Tools yang dapat digunakan untuk melakukan teknik sniffing adalah seperti Wireshark dan Netcut. Teknik sniffing ini dilakukan oleh para hacker atau penyusup yang berbahaya untuk melakukan tindakan yang dilarang seperti mencuri password dan data-data penting lainnya.
