@@ -22,10 +22,10 @@ Sniffer adalah teknik pencurian dan penyadapan data informasi yang dilakukan den
 Diffie-Hellman Key Exchange adalah suatu metode yang digunakan dalam bidang kriptografi untuk mengamankan pertukaran kunci yang terjadi diantara 2 komputer. Pada komunikasi antar komputer, pesan terenkripsi antara kedua komputer menggunakan kunci yang telah ditetapkan sebelumnya. Dengan menggunakan metode Diffie-Hellman Key Exchange ini memungkinkan agar kedua komputer yang tidak memiliki pengetahuan sebelumnya dapat membuat kunci secara bersama-sama. Kunci ini kemudian dapat digunakan untuk mengenkripsi pesan yang dikirimkan. Parameter yang digunakan yaitu Xa, yang hanya diketahui oleh komputer pertama, sedangkan komputer kedua tidak mengetahui. Begitu pula sebaliknya, parameter Xb hanya diketahui oleh komputer kedua, sedangkan komputer pertama tidak mengetahui. Dengan menggunakan metode ini, penyadap tidak akan bisa mengetahui kunci yang digunakan oleh 2 komputer.
 
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/25417308/6455e67a-2a6d-11e7-9fdd-0197da82e7f0.png" /></p>
+<p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/25383558/e11ae4e4-29e6-11e7-9881-1b1b1b9c3006.png" /></p>
 
 ## Langkah Implementasi
 ### Langkah Implementasi metode Diffie-Hellman Key Exchange
-<p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/25383558/e11ae4e4-29e6-11e7-9881-1b1b1b9c3006.png" /></p>
 Berikut ini merupakan langkah implementasi metode Diffie-Hellman Key Exchange pada algoritma Data Encryption Standard (DES) dengan menggunakan mode operasi Counter (CTR): <br/>
 1. Menentukan P, yaitu salah satu bilangan prima dan menentukan G, yaitu generator. <br/>
 2. Komputer pertama dan komputer kedua menentukan angka random rahasia secara berbeda. Angka ini disimpan sebagai variabel a bagi komputer pertama dan variabel b bagi komputer kedua. <br/>
