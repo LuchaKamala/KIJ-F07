@@ -25,13 +25,13 @@ Diffie-Hellman Key Exchange adalah suatu metode yang digunakan dalam bidang krip
 
 ## Langkah Implementasi
 ### Langkah Implementasi metode Diffie-Hellman Key Exchange
-Berikut ini merupakan langkah implementasi metode Diffie-Hellman Key Exchange pada algoritma Data Encryption Standard (DES) dengan menggunakan mode operasi Counter (CTR):<br/>
+Berikut ini merupakan langkah implementasi metode Diffie-Hellman Key Exchange pada algoritma Data Encryption Standard (DES) dengan menggunakan mode operasi Counter (CTR):
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/25383558/e11ae4e4-29e6-11e7-9881-1b1b1b9c3006.png" /></p>
-1. Menentukan P, yaitu salah satu bilangan prima dan menentukan G, yaitu generator.<br/>
-2. Komputer pertama dan komputer kedua menentukan angka random rahasia secara berbeda. Angka ini disimpan sebagai variabel a bagi komputer pertama dan variabel b bagi komputer kedua.<br/>
-3. Masukkan angka yang telah ditentukan ke dalam rumus A = G^a mod P untuk komputer pertama dan B = G^b mod P untuk komputer kedua.<br/>
-4. Hasil perhitungan dari langkah no. 3 dikirimkan antara satu sama lain.<br/>
-5. Komputer akan melakukan perhitungan terhadap angka yang telah didapatkan untuk mendapatkan kunci. Komputer pertama akan menggunakan rumus yaitu K = B^a mod P dan komputer kedua akan menggunakan rumus K = A^b mod P. Dari hasil perhitungan tersebut akan didapatkan kunci yang sama untuk digunakan dalam melakukan enkripsi dan dekripsi pesan.<br/>
+1. Menentukan P, yaitu salah satu bilangan prima dan menentukan G, yaitu generator. <br/>
+2. Komputer pertama dan komputer kedua menentukan angka random rahasia secara berbeda. Angka ini disimpan sebagai variabel a bagi komputer pertama dan variabel b bagi komputer kedua. <br/>
+3. Masukkan angka yang telah ditentukan ke dalam rumus A = G^a mod P untuk komputer pertama dan B = G^b mod P untuk komputer kedua. <br/>
+4. Hasil perhitungan dari langkah no. 3 dikirimkan antara satu sama lain. <br/>
+5. Komputer akan melakukan perhitungan terhadap angka yang telah didapatkan untuk mendapatkan kunci. Komputer pertama akan menggunakan rumus yaitu K = B^a mod P dan komputer kedua akan menggunakan rumus K = A^b mod P. Dari hasil perhitungan tersebut akan didapatkan kunci yang sama untuk digunakan dalam melakukan enkripsi dan dekripsi pesan. <br/>
 
 ## Teknik Operasi
 Berikut ini merupakan beberapa teknik operasi yang digunakan dalam implementasi algoritma Data Encryption Standard (DES) dengan menggunakan mode operasi Counter (CTR):
