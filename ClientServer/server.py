@@ -11,6 +11,7 @@ class Server:
         self.size = 1024
         self.server = None
         self.threads = []
+        self.client_list = []
 
     def open_socket(self):
         try:
@@ -28,7 +29,9 @@ class Server:
         try:
             while True:
                 # handle the server socket
-                c = Client(self.server.accept())
+                self.client_socket, self.client_address = self.server.accept()
+                self.client_list.append(self.client_socket)
+                c = Client(self.client_socket, self.client_address, self.client_list)
                 c.start()
                 self.threads.append(c)
         except KeyboardInterrupt:
@@ -37,23 +40,27 @@ class Server:
                 c.join()
 
 class Client(threading.Thread):
-    def __init__(self,(client,address)):
+    def __init__(self, client, address, client_list):
         threading.Thread.__init__(self)
         self.client = client
         self.address = address
         self.size = 1024
+        self.client_list = client_list
 
     def run(self):
         running = 1
         while running:
             data = self.client.recv(self.size)
             if data:
-                key = "irfan"
-                counter = Counter.counter()
-                decrypted = counter.decrypt(key, data)
                 print "data encrypted: " + data
-                print "data decrypted: " + decrypted
-                self.client.send(decrypted)
+                print
+
+                for client in self.client_list:
+                    if client == self.client:
+                        client.send("\0")
+                    else:
+                        client.send(data)
+
             else:
                 self.client.close()
                 running = 0
