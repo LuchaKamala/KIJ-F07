@@ -49,13 +49,13 @@ Berikut ini merupakan langkah implementasi metode Diffie-Hellman Key Exchange pa
 9. Melakukan perhitungan dengan nilai public_number yang telah diterima untuk membuat kunci. Dari hasil perhitungan ini akan didapatkan kunci yang sama untuk digunakan dalam melakukan proses enkripsi dan dekripsi pesan. <br/>
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/25514734/218270b4-2c09-11e7-883b-6a3b6e7bd7c8.png" /></p>
 10. Thread yang dijalankan akan menjalankan 2 proses pada client dan server, yaitu proses pengiriman dan proses penerimaan.<br/>
-##### Proses pengiriman pada server :
+Proses pengiriman pada server :
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/25514803/aede6a4e-2c09-11e7-98e2-1f1b62f66e80.png" /></p>
-##### Proses penerimaan oleh server :
+Proses penerimaan oleh server :
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/25514824/da2366a0-2c09-11e7-98ef-455a6c907536.png" /></p>
-##### Proses pengiriman pada client :
+Proses pengiriman pada client :
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/25514841/f65b8ac8-2c09-11e7-85b2-3e133b164ab5.png" /></p>
-##### Proses penerimaan oleh client :
+Proses penerimaan oleh client :
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/25514859/12ec7fee-2c0a-11e7-98ae-f211ca741f40.png" /></p>
 
 ## Input dan Output Program
@@ -69,7 +69,7 @@ Berikut ini merupakan langkah implementasi metode Diffie-Hellman Key Exchange pa
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/25515048/0939e71e-2c0c-11e7-80b9-a42448da7b89.png" /></p>
 5. Komputer 2 juga dapat membalas dan mengirimkan pesan kepada komputer 1. <br/>
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/25515058/174433fa-2c0c-11e7-9c02-6c1e17893d19.png" /></p>
-6. Komputer 1 dapat menerima balasan pesan dari komputer 2.
+6. Komputer 1 akan menerima balasan pesan dari komputer 2.
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/25515069/2649051a-2c0c-11e7-8928-e8343d8241b2.png" /></p>
 
 ## Kesimpulan
