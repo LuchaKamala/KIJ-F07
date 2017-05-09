@@ -54,7 +54,7 @@ class Server(threading.Thread):
             else:
                 continue
 
-host = 'localhost'
+host = '192.168.43.125'
 port = 5000
 size = 1024
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

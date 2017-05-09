@@ -14,7 +14,7 @@ class Config:
 
 class Server:
     def __init__(self):
-        self.host = 'localhost'
+        self.host = '192.168.43.125'
         self.port = 5000
         self.backlog = 5
         self.size = 1024
@@ -94,6 +94,8 @@ class Client(threading.Thread):
                     config.key = str(config.key)
 
                     decrypted = self.counter.decrypt(config.key, config.message)
+                    print "enkripsi: " + config.message
+                    print "key: " + config.key
                     print decrypted
         except KeyboardInterrupt:
             self.client.close()
