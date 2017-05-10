@@ -52,7 +52,7 @@ Berikut ini merupakan langkah implementasi algoritma RSA: <br/>
 
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/25894071/a9dd88f0-35a4-11e7-808f-d7e1c4205ca2.png" /></p>
 
-3. Mengitung nilai totient, yaitu m = (p-1)*(q-1).
+3. Menghitung nilai totient, yaitu m = (p-1)*(q-1).
 
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/25894103/cb4e4542-35a4-11e7-9dea-e1712ffde218.png" /></p>
 
