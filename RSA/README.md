@@ -40,7 +40,7 @@ RSA merupakan algoritma pertama yang cocok untuk digital signature dan merupakan
 ## Langkah Implementasi
 ### Langkah Implementasi algoritma RSA
 Berikut ini merupakan langkah implementasi algoritma RSA: <br/>
-##### A. Proses Pembuatan Kunci
+#### A. Proses Pembuatan Kunci
 1. Menentukan 2 bilangan prima yang berbeda secara random dan bernilai besar untuk kemudian disimpan sebagai variabel p dan q. Untuk mendapatkan bilangan prima secara random, maka digunakan fungsi MillerRabin.
 
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/25893993/563a688a-35a4-11e7-81dc-d5369eed568c.png" /></p>
@@ -73,7 +73,7 @@ Berikut ini merupakan langkah implementasi algoritma RSA: <br/>
 
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/25894253/5284c9fa-35a5-11e7-9d3f-40dd8857f2bb.png" /></p>
 
-##### C. Proses Enkripsi Pesan
+#### B. Proses Enkripsi Pesan
 1. Memasukkan pesan.
 
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/25894306/7affdabe-35a5-11e7-9984-e1d44f7c9823.png" /></p>
@@ -82,7 +82,7 @@ Berikut ini merupakan langkah implementasi algoritma RSA: <br/>
 
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/25894345/9cc23278-35a5-11e7-9a45-457c5ae8c77b.png" /></p>
 
-##### D. Proses Dekripsi Pesan
+#### C. Proses Dekripsi Pesan
 1. Menerima pesan terenkripsi.
 
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/26644539/25894393/d1a85698-35a5-11e7-8c5c-8ce385c0c236.png" /></p>
